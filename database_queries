@@ -1,0 +1,8 @@
+#Create keyspace
+
+CREATE KEYSPACE authorizationks WITH replication = {'class': 'SimpleStrategy', 'replication_factor': 3};
+
+#Create table
+
+CREATE TABLE admin_info(admin_email text PRIMARY KEY,admin_firstname text,admin_lastname text,admin_password);
+
